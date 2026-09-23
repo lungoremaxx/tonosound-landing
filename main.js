@@ -4,7 +4,7 @@
 const CONFIG = {
   // Número de WhatsApp en formato internacional, sin +, espacios ni guiones.
   // Ej. Argentina (CABA): 5491112345678
-  whatsapp: "5491100000000",
+  whatsapp: "5493518750771",
   // ID del Pixel de Meta (Events Manager). Vacío = pixel desactivado.
   metaPixelId: "",
   // URL de Instagram. Vacío = se oculta el link.

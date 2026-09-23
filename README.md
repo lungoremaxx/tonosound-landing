@@ -24,7 +24,7 @@ Al principio de `main.js`:
 
 ```js
 const CONFIG = {
-  whatsapp: "5491100000000", // número en formato internacional, sin + ni espacios
+  whatsapp: "5493518750771", // número en formato internacional, sin + ni espacios
   metaPixelId: "",           // ID del Pixel de Meta
   instagram: "",             // URL de Instagram (opcional)
 };
