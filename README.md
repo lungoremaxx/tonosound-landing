@@ -6,7 +6,17 @@ Sitio: https://tonosound.com.ar
 
 ## Estructura
 
-Sitio estático, sin build: `index.html`, `styles.css`, `main.js`, `assets/`. Se publica con GitHub Pages desde la rama `main`.
+Sitio estático, sin build: `index.html`, `styles.css`, `main.js`, `assets/`.
+
+## Deploy (Cloudflare)
+
+Se publica como Worker con archivos estáticos (`wrangler.jsonc`, proyecto `tonosound`):
+
+```bash
+npx wrangler deploy
+```
+
+`.assetsignore` excluye del deploy los archivos que no son del sitio.
 
 ## Configuración
 
@@ -26,12 +36,4 @@ El formulario de cotización arma un mensaje y abre WhatsApp con los datos preca
 
 ## Dominio
 
-`CNAME` apunta a `tonosound.com.ar`. En el DNS del dominio:
-
-| Tipo  | Nombre | Valor                 |
-|-------|--------|-----------------------|
-| A     | @      | 185.199.108.153       |
-| A     | @      | 185.199.109.153       |
-| A     | @      | 185.199.110.153       |
-| A     | @      | 185.199.111.153       |
-| CNAME | www    | lungoremaxx.github.io |
+El dominio `tonosound.com.ar` se gestiona en Cloudflare y se asigna al Worker `tonosound` como Custom Domain.
