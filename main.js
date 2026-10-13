@@ -6,7 +6,7 @@ const CONFIG = {
   // Ej. Argentina (CABA): 5491112345678
   whatsapp: "5493518750771",
   // ID del Pixel de Meta (Events Manager). Vacío = pixel desactivado.
-  metaPixelId: "",
+  metaPixelId: "1790121272297834",
   // URL de Instagram. Vacío = se oculta el link.
   instagram: "",
 };
